@@ -10,9 +10,7 @@ export default function OwnerNoticeBanner() {
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
         <div className="flex items-center gap-2 text-center sm:text-left">
           <Info size={15} className="text-amber-700 shrink-0" />
-          <span>
-            <strong>Pre-launch Preview:</strong> Menu prices, business hours, and phone numbers are transcribed from the café menu card and pending final owner confirmation.
-          </span>
+          
         </div>
 
         <button
