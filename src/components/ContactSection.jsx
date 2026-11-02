@@ -20,7 +20,7 @@ export default function ContactSection() {
   )}`;
 
   return (
-    <section id="contact" className="py-20 sm:py-28 bg-white border-t border-cream-200 scroll-mt-20">
+    <section id="contact" className="py-14 sm:py-24 bg-white border-t border-cream-200 scroll-mt-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-14">

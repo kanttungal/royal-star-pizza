@@ -36,10 +36,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-royal-950/95 backdrop-blur-md shadow-lg shadow-black/20 py-2.5 border-b border-royal-800/40'
-          : 'bg-gradient-to-b from-royal-950/90 via-royal-950/70 to-transparent py-4'
+      className={`sticky top-0 left-0 right-0 z-40 transition-all duration-300 bg-royal-950/95 backdrop-blur-md shadow-lg shadow-black/20 border-b border-royal-800/40 ${
+        isScrolled ? 'py-2 sm:py-2.5' : 'py-2.5 sm:py-3.5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,13 +45,13 @@ export default function Navbar() {
           {/* Logo & Brand Name */}
           <a
             href="#home"
-            className="flex items-center gap-2.5 sm:gap-3 group focus:outline-none"
+            className="flex items-center gap-2 sm:gap-3 group focus:outline-none shrink-0"
             aria-label="Royal Star Pizza Homepage"
           >
             <Logo size="md" className="group-hover:rotate-6 transition-transform" />
             <div>
               <div className="flex items-center gap-1.5">
-                <span className="font-serif font-black tracking-wider text-base sm:text-xl text-white group-hover:text-gold-400 transition-colors">
+                <span className="font-serif font-black tracking-wider text-base sm:text-xl text-white group-hover:text-gold-400 transition-colors whitespace-nowrap">
                   ROYAL STAR PIZZA
                 </span>
                 <VegBadge className="hidden sm:inline-flex" />
@@ -93,7 +91,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setIsReviewOpen(true)}
-              className="relative inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-gold-500 hover:bg-gold-400 text-charcoal-950 font-extrabold text-xs shadow-gold-glow transition-all active:scale-95"
+              className="relative inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 rounded-full bg-gold-500 hover:bg-gold-400 text-charcoal-950 font-extrabold text-xs shadow-gold-glow transition-all active:scale-95 shrink-0"
               aria-label={`View Cart: ${totalCount} items`}
             >
               <ShoppingBag size={15} />
@@ -121,7 +119,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden w-9 h-9 rounded-xl bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors"
+              className="lg:hidden w-9 h-9 rounded-xl bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors shrink-0"
               aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
             >
               {mobileMenuOpen ? <X size={20} /> : <MenuIcon size={20} />}
@@ -132,7 +130,7 @@ export default function Navbar() {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-royal-950 border-b border-royal-800/80 px-4 pt-3 pb-6 shadow-2xl animate-fadeIn">
+        <div className="lg:hidden bg-royal-950 border-b border-royal-800/80 px-4 pt-3 pb-6 shadow-2xl animate-fadeIn max-h-[calc(100vh-4.5rem)] overflow-y-auto">
           <div className="flex items-center justify-between pb-3 mb-2 border-b border-royal-800/60">
             <VegBadge showText text="100% Vegetarian Café" />
             <span className="text-[11px] text-cream-200">Purkazi, Muzaffarnagar</span>
@@ -174,4 +172,3 @@ export default function Navbar() {
     </header>
   );
 }
-

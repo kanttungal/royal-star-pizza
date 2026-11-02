@@ -112,7 +112,7 @@ export default function MenuGrid() {
 
         {/* Subcategories (if Pizza category is selected) */}
         {subcategories.length > 0 && (
-          <div className="flex items-center gap-2 overflow-x-auto pb-4 mb-6 pt-1 scrollbar-none">
+          <div className="flex items-center gap-2 overflow-x-auto pb-4 mb-6 pt-1 scrollbar-none no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0">
             <span className="text-xs font-bold text-charcoal-700 flex items-center gap-1 shrink-0 mr-1">
               <Filter size={13} /> Pizza Tier:
             </span>
