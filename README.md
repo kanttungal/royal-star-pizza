@@ -57,7 +57,7 @@ npm run preview
 
 ## 📋 Business Details for Café Owner Confirmation Before Final Launch
 
-1. **Primary Ordering WhatsApp Number:** Currently configured as `+91 96671 70027` (from menu card). Alternate Google listing number is `+91 80579 00027`. Confirm which number receives customer WhatsApp orders.
+1. **Primary Ordering WhatsApp Number:** Configured as `+91 80579 00027`. Alternate phone line is `+91 89370 31593`.
 2. **Operating Hours:** Transcribed as `10:00 AM – 10:00 PM` daily; verify exact weekly timings.
 3. **Delivery Radius:** Takeaway is enabled; confirm current delivery radius and delivery conditions within Purkazi.
 4. **Combo Availability:** The 4-Pizza Mania Single Toppings combo @ ₹249 is currently marked as subject to daily availability.

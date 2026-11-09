@@ -11,17 +11,17 @@ export const BUSINESS_CONFIG = {
   badge: "100% Pure Vegetarian Café",
   
   // Ordering WhatsApp Number (country code 91 followed by 10-digit number)
-  // Configured as +91 96671 70027 (Primary from menu card; confirm with owner before final publish)
-  whatsappNumber: "919667170027",
-  whatsappDisplayNumber: "+91 96671 70027",
+  // Configured as +91 80579 00027
+  whatsappNumber: "918057900027",
+  whatsappDisplayNumber: "+91 80579 00027",
 
   // Primary Call Number
-  primaryPhone: "+91 96671 70027",
-  primaryPhoneRaw: "+919667170027",
+  primaryPhone: "+91 80579 00027",
+  primaryPhoneRaw: "+918057900027",
 
   // Secondary Numbers (from Google Listing & Menu Card)
-  alternativePhone: "+91 80579 00027",
-  alternativePhoneRaw: "+918057900027",
+  alternativePhone: "+91 89370 31593",
+  alternativePhoneRaw: "+918937031593",
   landlinePhone: "01332-297200",
   landlinePhoneRaw: "01332297200",
 
@@ -69,8 +69,8 @@ export const BUSINESS_CONFIG = {
 
   // Pending Owner Confirmation checklist for transparency
   verificationChecklist: [
-    { item: "Primary WhatsApp ordering number", status: "Configured (+91 96671 70027), needs owner confirmation" },
-    { item: "Secondary phone line", status: "Configured (+91 80579 00027 from Google listing)" },
+    { item: "Primary WhatsApp ordering number", status: "Configured (+91 80579 00027)" },
+    { item: "Secondary phone line", status: "Configured (+91 89370 31593)" },
     { item: "Landline line", status: "Configured (01332-297200 from menu card)" },
     { item: "Daily working hours", status: "10:00 AM – 10:00 PM (printed on card)" },
     { item: "Home delivery availability & zone", status: "Takeaway confirmed; delivery zone to be finalized" },

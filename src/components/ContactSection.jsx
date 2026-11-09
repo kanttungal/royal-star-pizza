@@ -124,7 +124,7 @@ export default function ContactSection() {
                     <div className="flex items-center justify-between p-2.5 bg-white rounded-xl border border-cream-200">
                       <div>
                         <span className="text-[10px] font-bold uppercase tracking-wider text-charcoal-700 block">
-                          Alternative Phone (Google Listing)
+                          Alternative Phone
                         </span>
                         <span className="text-sm font-bold text-charcoal-900">
                           {BUSINESS_CONFIG.alternativePhone}
